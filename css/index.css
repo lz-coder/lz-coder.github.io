@@ -1,0 +1,108 @@
+:root {
+    --text-color: #fff;
+}
+* {padding: 0; margin: 0; box-sizing: border-box;}
+html, body {width: 100%;}
+
+body {
+    background: rgba(107, 114, 142, 0.6);
+    color: var(--text-color);
+    font-family: Roboto, serif;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a.fa {color: var(--text-color) !important; text-decoration: none;}
+
+.border-radius {border-radius: 0.5em;}
+.default-section {
+    background: #474E68;
+    height: auto;
+    padding-bottom: 2em;
+}
+.section-top-margin {
+    margin-top: 0.5em;
+}
+.section-shadow-inset {
+    box-shadow: -1 -2px 2px 2px #404258 inset;
+}
+.text-center {text-align: center;}
+
+.flex {display: flex;}
+.ali-center {align-items: center;}
+.jus-center {justify-content: center;}
+.dir-column {flex-direction: column;}
+
+#page_container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 1em auto;
+}
+
+#page_header {
+    background: #474E68;
+    height: auto;
+    box-shadow: 0 2px 2px 2px #404258;
+}
+
+#page_footer {
+    background: #404258;
+    height: 4em;
+    padding-top: 1.2em;
+}
+#page_footer a {color: var(--text-color);}
+#page_footer a:hover {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+}
+
+.header-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.header-image {
+    width: 128px;
+    border-radius: 100%;
+    box-shadow: 0 0 4px 0.5px #000;
+}
+.header-desc {margin: 0.5em 0;}
+.header-links a {
+    font-size: 1.2em;
+}
+
+.section-title {padding: 1em 0 0.5em;}
+
+.projects-container {
+    margin: 0.5em 1em;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.project-card {
+    width: 45%;
+    background-color: #50577A;
+    padding: 0.5em;
+    box-shadow: 0 0 6px #404258;
+    position: relative;
+}
+.project-title {margin: 0.2em 0;}
+.project-video {
+    width: 95%;
+    margin: 0.2em 0;
+    box-shadow: -1px -1px 4px #000;
+    max-width: 100%;
+}
+.project-video-links {
+    margin-top: 0.5em;
+}
+.project-video-links a {
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 767px) {
+    #page_container {width: 95%;}
+    .header-container {width: 80%;}
+    .projects-container {flex-direction: column;}
+    .project-card {width: 100%;}
+}

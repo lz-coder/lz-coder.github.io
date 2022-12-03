@@ -1,8 +1,7 @@
 const fa_links = document.querySelectorAll("a.fa");
 const fa_links_pair = document.querySelectorAll("a.fa:nth-of-type(2n)");
 const project_cards = document.getElementsByClassName("project-card");
-
-console.log (fa_links_pair);
+var mouseOnCard = false;
 
 function animateFaLinks(link, dir, minSize, maxSize) {
     link.animate([
@@ -21,17 +20,32 @@ function animateFaLinks(link, dir, minSize, maxSize) {
 }
 
 for (let i = 0; i < project_cards.length; i++) {
-    project_cards[i].addEventListener('mouseover', () => {
-        setTimeout( () => {
-            animateFaLinks(project_cards[i], "normal", 1, 1.1);
-            project_cards[i].style.zIndex = 1;
-            project_cards[i].style.boxShadow = "0 0 10px 5px #000"; 
-            }, 1000);
+    project_cards[i].addEventListener('mouseenter', function() {
+        console.warn(`enter ${mouseOnCard}`);
+        if (mouseOnCard == false) {
+            mouseOnCard = true;
+            console.log(`enter if ${mouseOnCard}`);
+        }
+        if (mouseOnCard) {
+            setTimeout( () => {
+                animateFaLinks(this, "normal", 1, 1.1);
+                this.style.zIndex = 1;
+                this.style.boxShadow = "0 0 10px 5px #000"; 
+                console.log("card time out!!!");
+                }, 500);
+        }
     });
-    project_cards[i].addEventListener('mouseleave', () => {
-        animateFaLinks(project_cards[i], "reverse", 1, 1.1);
-        project_cards[i].style.zIndex = 0;
-        project_cards[i].style.boxShadow = "none";
+    project_cards[i].addEventListener('mouseleave', function() {
+        console.warn(`leave ${mouseOnCard}`);
+        if (mouseOnCard == true) {
+            mouseOnCard = false;
+            console.log(`leave if ${mouseOnCard}`);
+        }
+        if (!mouseOnCard) {
+            animateFaLinks(this, "reverse", 1, 1.1);
+            this.style.zIndex = 0;
+            this.style.boxShadow = "none";
+        }
     });
 }
 

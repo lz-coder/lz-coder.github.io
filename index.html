@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Home for my Projects</title>
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>lz-coder</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
-<main id="page_container">
-    <header id="page_header" class="border-radius">
-        <div class="header-container flex dir-column ali-center jus-center">
-           <img src="/imgs/perfil.jpg" alt="my picture" class="header-image">
-           <div class="header-desc text-center">
-               <p>I love being able to develop my ideas and turn them into reality.</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, possimus!</p>
-           </div>
-           <div class="header-links">
-               <a href="https://github.com/lz-coder" target="_blank" class="fa fa-github"></a>
-               <a href="https://linkedin.com/in/luan-adao" target="_blank" class="fa fa-linkedin"></a>
-               <a href="#" class="fa fa-twitter"></a>
-           </div>
+    <header id="page_header">
+        <div class="page-container">
+            <img class="header-image" src="img/perfil.jpg">
+            <h1 class="header-title">Luan Adão (lz-coder)</h1>
+            <p class="header-desc">
+                Tecnhology lover, FOSS enthusiast, Front-end Web Developer
+            </p>
+            <a class="contact-button" onclick="showContactScreen()">Get In Touch</a>
         </div>
     </header>
-    <section class="default-section section-shadow-inset border-radius section-top-margin">
-        <h1 class="section-title text-center">My Projects</h1>
-        <div class="projects-container flex">
-            <div class="project-card text-center border-radius">
-                <h3 class="project-title">Easybank Landing Page</h3>
-                <video class="project-video" src="/videos/easybank.webm" controls autoplay="false"></video>
-                <div class="project-video-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, distinctio!
-                    <div class="project-video-links">
-                        <a href="" class="fa fa-globe"></a>
-                        <a href="" class="fa fa-file"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card text-center border-radius">
-                <h3 class="project-title">Chirp Starter Landing</h3>
-                <video class="project-video" src="/videos/chirp.mp4" controls autoplay="false"></video>
-                <div class="project-video-desc">
-                    A responsive landing page template from Codewell. Build with HTML and CSS.
-                    <div class="project-video-links">
-                        <a href="" class="fa fa-globe"></a>
-                        <a href="" class="fa fa-file"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card text-center border-radius">
-                <h3 class="project-title">Lorem, ipsum dolor.</h3>
-                <video class="project-video" src="/videos/image-gallery.mp4" controls autoplay="false"></video>
-                <div class="project-video-desc">
-                    A responsive Image gallery website, build with HTML, CSS and JS.
-                    <div class="project-video-links">
-                        <a href="" class="fa fa-globe"></a>
-                        <a href="" class="fa fa-file"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card text-center border-radius">
-                <h3 class="project-title">Lorem, ipsum dolor.</h3>
-                <video class="project-video" src="/videos/easybank.webm" controls autoplay="false"></video>
-                <div class="project-video-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, distinctio!
-                    <div class="project-video-links">
-                        <a href="" class="fa fa-globe"></a>
-                        <a href="" class="fa fa-file"></a>
-                    </div>
-                </div>
-            </div>
+    <main>
+        <div class="page-container">
+            <figure id="image_slider">
+                <h3 id="slider_title" class="text-ali-center"></h3>
+            </figure>
+            <section class="default-section projects-section">
+            </section>
         </div>
-    </section>
-    <footer id="page_footer" class="section-top-margin border-radius text-center">
-        <small>Made with &#128151; by Luan Adão( <a href="https://github.com/lz-coder" target="_blank">lz-coder</a> )</small>
+    </main>
+    <footer id="page_footer" class="text-ali-center">
+        <span>Developed with <i class="fa fa-heart" title="love"></i> & <i class="fa fa-coffee"
+                title="coffee"></i></span>
+        <span>
+            | Powered by <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3" title="CSS3"></i>
+            <i class="fab fa-js"></i>
+        </span>
     </footer>
-</main>
-<script src="/src/index.js"></script>
+    <script src="src/projects-cards-generator.js"> </script>
+    <script type="text/javascript" src="src/contact-screen.js"> </script>
+    <script type="text/javascript" src="src/image-slider.js"> </script>
 </body>
+
 </html>

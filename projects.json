@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Chirp Starter Landing",
+        "url": "https://lzcoder.online/chirp-starter-landing",
+        "sourceUrl": "https://github.com/lz-coder/chirp-starter-landing",
+        "image": "./img/projects/chirp.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "A landing page, template by Codewell"
+    },
+    {
+        "name": "EasyBank Landing Page",
+        "url": "https://lzcoder.online/easybank-landing-page",
+        "sourceUrl": "https://github.com/lz-coder/easybank-landing-page",
+        "image": "./img/projects/easybank.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "A landing page, template by Codewell"
+    },
+    {
+        "name": "Waitlist",
+        "url": "https://lzcoder.online/waitlist",
+        "sourceUrl": "https://github.com/lz-coder/waitlist",
+        "image": "./img/projects/waitlist.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "A landing page, template by Codewell"
+    },
+    {
+        "name": "Sample Website",
+        "url": "https://lzcoder.online/samplesite",
+        "sourceUrl": "https://github.com/lz-coder/chirp-starter-landing",
+        "image": "./img/projects/samplesite.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "A landing page, template by Codewell"
+    },
+    {
+        "name": "Simple Todo App",
+        "url": "https://lzcoder.online/simple-todo",
+        "sourceUrl": "https://github.com/lz-coder/simple-todo",
+        "image": "./img/projects/simpletodo.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "A landing page, template by Codewell"
+    },
+    {
+        "name": "Image Gallery",
+        "url": "https://lzcoder.online/image-gallery",
+        "sourceUrl": "https://github.com/lz-coder/image-gallery",
+        "image": "./img/projects/image-gallery.png",
+        "techs": [
+            "HTML5",
+            "CSS3",
+            "JS"
+        ],
+        "desc": "Responsive image gallery."
+    }
+]

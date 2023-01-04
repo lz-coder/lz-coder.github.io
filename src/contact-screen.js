@@ -11,16 +11,22 @@ close_button.onclick = () => {
 
 const form = document.createElement("form");
 form.setAttribute("id", "contact_form");
+form.setAttribute("action", "https://formspree.io/f/mvonoaar");
+form.setAttribute("method", "POST");
 form.className = "flex dir-column ali-center";
 const input_email = document.createElement("input");
 input_email.setAttribute("placeholder", "Your email");
 input_email.setAttribute("type", "email");
+input_email.setAttribute("name", "email");
 input_email.className = "form-input";
 const input_subject = document.createElement("input");
 input_subject.setAttribute("placeholder", "Subject");
+input_subject.setAttribute("type", "text");
+input_subject.setAttribute("name", "subject");
 input_subject.className = "form-input";
 const input_message = document.createElement("textarea");
 input_message.setAttribute("placeholder", "Your message...");
+input_message.setAttribute("name", "message");
 input_message.className = "form-input";
 const input_submit_button = document.createElement("button");
 input_submit_button.setAttribute("type", "submit");

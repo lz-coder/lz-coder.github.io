@@ -1,10 +1,15 @@
 * {padding: 0; margin: 0; box-sizing: border-box;}
+
+html {font-size: clamp(1rem, 0.2rem + 1vw, 2rem);}
+
 html, body, main {width: 100%;}
+
 body {font-family: Roboto, serif; height: 100vh;}
+
 main {
     min-height: 100%;
     background-color: #191424;
-    padding-bottom: 4em;
+    padding-bottom: 4rem;
 }
 
 .flex {display: flex;}
@@ -16,10 +21,9 @@ main {
 
 #page_header {
     background: #382656;
-    padding: 1em 0 2em;
+    padding: 1rem 0 2rem;
     text-align: center;
     color: #fff;
-    max-height: 18em;
     box-shadow: -1px 1px 1em #120d1c;
     position: relative;
 }
@@ -28,8 +32,9 @@ main {
     height: 4em;
     background: #000;
     color: #fff;
-    padding: 1em 0 0;
+    padding: 1rem 0 0;
     box-shadow: 1px -1px 1px #8d8896;
+    font-size: 0.9em;
 }
 
 .header-image {
@@ -226,6 +231,7 @@ textarea.form-input {
 
 #image_slider {
     max-width: 60%;
+    min-height: 100%;
     margin: 0 auto;
     padding: 4em 0;
 }
@@ -237,4 +243,21 @@ textarea.form-input {
 #slider_title {
     color: #fff;
     margin: 0 0 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+    .header-desc {
+        inline-size: 30ch;
+        margin-left: auto; margin-right: auto;
+    }
+    .page-container {
+        width: 95%;
+    } 
+    .projects-section {
+        grid-template-columns: auto;
+        padding-left: 1rem; padding-right: 1rem;;
+    }
+    #image_slider {
+        max-width: 100%;
+    }
 }

@@ -36,16 +36,16 @@
         "desc": "A landing page, template by Codewell"
     },
     {
-        "name": "Sample Website",
-        "url": "https://lzcoder.online/samplesite",
-        "sourceUrl": "https://github.com/lz-coder/chirp-starter-landing",
-        "image": "./img/projects/samplesite.png",
+        "name": "Git Cola Website",
+        "url": "gitcola.github.io",
+        "sourceUrl": "https://github.com/lz-coder/image-gallery",
+        "image": "./img/projects/git-cola.png",
         "techs": [
             "HTML5",
             "CSS3",
             "JS"
         ],
-        "desc": "A landing page, template by Codewell"
+        "desc": "I rewrite the git-cola project website."
     },
     {
         "name": "Simple Todo App",

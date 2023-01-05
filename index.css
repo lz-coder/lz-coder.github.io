@@ -79,8 +79,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(30%, auto));
     column-gap: 2em;
     row-gap: 4em;
-    justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .card-figure {
@@ -98,6 +97,9 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 0.4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-description {
     color: #fff;
@@ -120,12 +122,12 @@ main {
 
 .project-view-button {
     background: #8e1123;
-    left: 30%;
+    left: 25%;
 }
 .project-view-button:hover {background: #9a1918;}
 .project-source-button {
     background: #118e1c;
-    right: 30%;
+    right: 25%;
 }
 .project-source-button:hover {background: #289a18;}
 
@@ -246,6 +248,12 @@ textarea.form-input {
 }
 
 @media screen and (max-width: 767px) {
+    #image_slider {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
     .header-desc {
         inline-size: 30ch;
         margin-left: auto; margin-right: auto;
@@ -256,8 +264,5 @@ textarea.form-input {
     .projects-section {
         grid-template-columns: auto;
         padding-left: 1rem; padding-right: 1rem;;
-    }
-    #image_slider {
-        max-width: 100%;
     }
 }

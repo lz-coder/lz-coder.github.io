@@ -9,7 +9,7 @@ body {font-family: Roboto, serif; height: 100vh;}
 main {
     min-height: 100%;
     background-color: #191424;
-    padding-bottom: 4rem;
+    padding: 2rem 0 4rem;
 }
 
 .flex {display: flex;}
@@ -235,12 +235,14 @@ textarea.form-input {
     max-width: 60%;
     min-height: 100%;
     margin: 0 auto;
-    padding: 4em 0;
+    display: flex;
+    overflow-x: hidden;
+    border-radius: 0.5rem;
 }
 #image_slider .slider-image {
     max-width: 100%;
     box-shadow: 0 0 4px 2px #000;
-    border-radius: 0.5em;
+    border-radius: inherit;
 }
 #slider_title {
     color: #fff;

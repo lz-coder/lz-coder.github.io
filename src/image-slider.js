@@ -1,7 +1,7 @@
 const image_slider = document.getElementById("image_slider");
 let slider_titles = [];
 
-const addImage = (img, name) => {
+const addImage = (img) => {
     if (img != null) {
         const image = document.createElement("img");
         image.className = "slider-image";

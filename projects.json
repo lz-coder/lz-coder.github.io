@@ -9,7 +9,7 @@
             "CSS3",
             "JS"
         ],
-        "desc": "A landing page, template by Codewell"
+        "desc": "A landing page, design by Codewell"
     },
     {
         "name": "EasyBank Landing Page",
@@ -21,7 +21,7 @@
             "CSS3",
             "JS"
         ],
-        "desc": "A landing page, template by Codewell"
+        "desc": "A landing page, design by Frontend Mentor"
     },
     {
         "name": "Waitlist",
@@ -33,7 +33,7 @@
             "CSS3",
             "JS"
         ],
-        "desc": "A landing page, template by Codewell"
+        "desc": "A Simple landing page, design by Codewell"
     },
     {
         "name": "Git Cola Website",
@@ -45,7 +45,7 @@
             "CSS3",
             "JS"
         ],
-        "desc": "I rewrite the git-cola project website."
+        "desc": "Redesigned some parts of git-cola website"
     },
     {
         "name": "Simple Todo App",
@@ -57,7 +57,7 @@
             "CSS3",
             "JS"
         ],
-        "desc": "A landing page, template by Codewell"
+        "desc": "TODO app write in pure HTML, CSS e JS"
     },
     {
         "name": "Image Gallery",
@@ -69,6 +69,6 @@
             "CSS3",
             "JS"
         ],
-        "desc": "Responsive image gallery."
+        "desc": "Responsive image gallery, with modal."
     }
 ]

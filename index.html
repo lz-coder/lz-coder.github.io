@@ -17,8 +17,23 @@
             <p class="header-desc">
                 Technology lover, FOSS enthusiast, Front-end Web Developer
             </p>
-            <a class="contact-button" onclick="showContactScreen()">Get In Touch</a>
+            <a class="contact-button" onclick="showContactDialog()">Get In Touch</a>
         </div>
+        <dialog id="contact_dialog">
+            <i class="close-button fa fa-close" onclick="closeContactDialog()"></i>
+            <form id="contact_form" class="flex dir-column ali-center" action="https://formspree.io/f/mvonoaar"
+                method="POST">
+                <input class="form-input" placeholder="Email" type="email" name="email" required>
+                <input class="form-input" placeholder="Subject" type="text" name="subject" required>
+                <textarea class="form-input" placeholder="Message..." name="message" required></textarea>
+                <button class="form-button">Submit</button>
+            </form>
+            <div id="contact_links_container" class="flex dir-column ali-center">
+                <a href="" class="contact-link fab fa-github"></a>
+                <a href="" class="contact-link fab fa-instagram"></a>
+                <a href="" class="contact-link fab fa-linkedin"></a>
+            </div>
+        </dialog>
     </header>
     <main>
         <div class="page-container">
@@ -41,7 +56,8 @@
             <i class="fab fa-js"></i>
         </span>
     </footer>
-    <script src="src/projects-cards-generator.js"> </script>
+
+    <script type="text/javascript" src="src/projects-cards-generator.js"> </script>
     <script type="text/javascript" src="src/contact-screen.js"> </script>
     <script type="text/javascript" src="src/image-slider.js"> </script>
 </body>

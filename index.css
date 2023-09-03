@@ -257,3 +257,41 @@ textarea.form-input {
     }
 }
 
+/*
+@media screen and (max-width: 767px) {
+    #image_slider {
+        max-width: 100%;
+    }
+    #contact_dialog {
+        min-width: 100vw;
+        min-height: unset;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .header-desc {
+        inline-size: 30ch;
+        margin-left: auto; margin-right: auto;
+    }
+    .page-container {
+        width: 95%;
+    } 
+    .projects-section {
+        grid-template-columns: auto;
+        padding-left: 1rem; padding-right: 1rem;;
+    }
+    #contact_form {
+        width: 98%;
+        left: 0.2em;
+        top: 4em;
+    }
+    #contact_links_container {
+        top: unset;
+        bottom: 0.5em;
+        flex-direction: row;
+        right: unset;
+        left: calc(100vw/4);
+    }
+}
+*/
